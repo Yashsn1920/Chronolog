@@ -1,0 +1,161 @@
+.stat-icon.violet { color: #b59ae0; background: #302a3a; }
+.month-controls { align-items: center; }
+.text-button { padding: 6px 8px; border: 1px solid transparent; border-radius: 5px; background: transparent; color: #9ebba4; font-size: 10px; cursor: pointer; }
+.text-button:hover { border-color: #39443c; background: #202722; }
+.mark-task, .task-dot { background: #d0a86d; }
+.mark-github, .github-dot { background: #af91dc; }
+.legend { row-gap: 7px; }
+.tasks-section { margin-top: 17px; }
+.task-form { display: flex; gap: 6px; }
+.task-form input { min-width: 0; height: 31px; padding: 0 8px; border: 1px solid #303237; border-radius: 5px; outline: none; background: #141517; color: #d9dadd; font-size: 10px; }
+.task-form input:focus { border-color: #657e6a; }
+.task-form input[aria-label="New task"] { flex: 1; }
+.task-form input[type="date"] { width: 116px; color: #aeb1b7; font-size: 9px; }
+.task-form input[type="time"] { width: 89px; color: #aeb1b7; font-size: 9px; }
+.task-form button { display: grid; flex: 0 0 31px; place-items: center; padding: 0; border: 1px solid #4c6a53; border-radius: 5px; background: #2e4434; color: #c0dbc4; cursor: pointer; }
+.task-form button:hover { background: #3b5742; }
+.form-error { margin: 7px 0 0; color: #e49a91; font-size: 10px; }
+.empty-tasks { margin: 11px 0 0; color: #73777f; font-size: 10px; }
+.task-list { display: flex; flex-direction: column; gap: 2px; margin: 7px 0 0; padding: 0; list-style: none; }
+.task-item { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 29px; }
+.task-item > label { display: flex; align-items: center; gap: 8px; min-width: 0; color: #babcc2; font-size: 10px; cursor: pointer; }
+.task-item > label > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.task-reminder { color: #92967f; font-size: 9px; font-weight: 400; text-decoration: none; }
+.task-item input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.task-item .custom-check { flex: 0 0 15px; }
+.task-item.completed > label { color: #747a76; text-decoration: line-through; }
+.task-item.completed .custom-check { border-color: #5d8065; background: #314737; color: #b7d5bd; }
+.delete-task { display: grid; place-items: center; width: 25px; height: 25px; border: 0; border-radius: 4px; background: transparent; color: #72767d; cursor: pointer; opacity: .55; }
+.delete-task:hover { background: #342526; color: #e29a91; opacity: 1; }
+.external-day { padding: 10px 0 0; border-top: 1px solid #292b2f; }
+.mini-github-event { display: flex; justify-content: space-between; gap: 8px; padding: 5px 0; color: #bca5e3; text-decoration: none; font-size: 9px; }
+.mini-github-event small { overflow: hidden; color: #797d84; text-overflow: ellipsis; white-space: nowrap; }
+.mini-github-event:hover span { text-decoration: underline; }
+.github-panel { margin-top: 20px; padding: 21px 23px; }
+.github-top { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
+.github-top h2 { display: flex; align-items: center; gap: 8px; }
+.github-top h2 svg { color: #aaaeb5; }
+.github-description { margin: 6px 0 0; color: #858991; font-size: 10px; }
+.sync-time { padding-top: 3px; color: #777b83; font-size: 9px; }
+.github-connect { display: flex; align-items: center; max-width: 450px; height: 36px; margin-top: 16px; border: 1px solid #33363b; border-radius: 6px; background: #141517; }
+.github-prefix { padding-left: 10px; color: #72767e; font-size: 10px; }
+.github-connect input { flex: 1; min-width: 0; height: 100%; padding: 0 6px; border: 0; outline: 0; background: transparent; color: #dedfe2; font-size: 10px; }
+.github-connect button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 28px; margin-right: 4px; padding: 0 9px; border: 1px solid #465d4b; border-radius: 4px; background: #293b2e; color: #c5dbc9; font-size: 10px; cursor: pointer; }
+.github-connect button:disabled { cursor: wait; opacity: .6; }
+.github-empty { margin: 13px 0 0; color: #72767d; font-size: 10px; }
+.github-error { max-width: 450px; }
+.github-content { display: grid; grid-template-columns: 1.1fr 1fr 1.1fr; gap: 22px; margin-top: 20px; }
+.github-column { min-width: 0; }
+.github-column-title { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding-bottom: 8px; border-bottom: 1px solid #2a2c30; }
+.github-column-title strong { color: #d4d5d9; font-size: 10px; font-weight: 600; }
+.github-column-title span { color: #73777f; font-size: 9px; }
+.github-event { display: flex; align-items: center; gap: 9px; min-height: 40px; border-bottom: 1px solid #25272b; color: inherit; text-decoration: none; }
+.github-event:hover .github-event-copy strong { color: #c8b1e9; }
+.event-dot { flex: 0 0 6px; width: 6px; height: 6px; border-radius: 50%; background: #aa8ad4; }
+.github-event-copy { display: flex; flex: 1; flex-direction: column; gap: 3px; min-width: 0; }
+.github-event-copy strong { overflow: hidden; color: #c9cbd0; font-size: 10px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
+.github-event-copy small { color: #7c8088; font-size: 9px; }
+.event-arrow { color: #666b73; font-size: 12px; }
+.repo-item { display: grid; grid-template-columns: minmax(0, 1fr) 90px 48px; gap: 9px; align-items: center; min-height: 40px; border-bottom: 1px solid #25272b; color: #c9cbd0; text-decoration: none; font-size: 10px; }
+.repo-item:hover .repo-name { color: #c8b1e9; }
+.repo-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.repo-language { overflow: hidden; color: #81858d; text-overflow: ellipsis; white-space: nowrap; }
+.repo-stars { color: #aaa087; text-align: right; font-size: 9px; }
+.commit-item { display: flex; flex-direction: column; justify-content: center; gap: 4px; min-height: 40px; border-bottom: 1px solid #25272b; color: #c9cbd0; text-decoration: none; }
+.commit-item:hover .commit-message { color: #c8b1e9; }
+.commit-message { overflow: hidden; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.commit-item small { overflow: hidden; color: #7c8088; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+.github-footnote { margin: 14px 0 0; color: #6e727a; font-size: 9px; }
+.mark-leetcode, .leetcode-dot { background: #d5a85f; }
+.leetcode-panel { margin-top: 20px; padding: 21px 23px; }
+.leetcode-panel h2 svg { color: #d5a85f; }
+.leetcode-stats { display: flex; align-items: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
+.solved-total { display: flex; flex-direction: column; gap: 3px; padding-right: 23px; border-right: 1px solid #303237; }
+.solved-total strong { color: #e2c28c; font-size: 26px; line-height: 1; font-weight: 600; }
+.solved-total span { color: #858991; font-size: 9px; }
+.solved-breakdown { display: flex; gap: 19px; }
+.solved-breakdown span { display: flex; align-items: center; gap: 6px; color: #9599a0; font-size: 10px; }
+.solved-breakdown strong { color: #d1d2d6; font-weight: 600; }
+.solved-breakdown i { width: 6px; height: 6px; border-radius: 50%; }
+.easy-dot { background: #82bd8e; }.medium-dot { background: #d4ad6d; }.hard-dot { background: #d77e78; }
+.leetcode-extra { display: flex; gap: 16px; padding-left: 22px; border-left: 1px solid #303237; }
+.leetcode-extra span { color: #858991; font-size: 9px; }.leetcode-extra strong { color: #c7c9ce; font-size: 11px; font-weight: 600; }
+.profile-link { color: #b99bdf; font-size: 9px; text-decoration: none; }.profile-link:hover { text-decoration: underline; }
+.leetcode-day { color: #d1ad74; }.leetcode-day p { margin: 4px 0 0; color: #b8a178; font-size: 9px; }
+.automation-panel { margin-top: 20px; padding: 21px 23px; }
+.automation-panel h2 { margin: 3px 0 0; color: #e0e1e3; font-size: 16px; font-weight: 550; }
+.n8n-open-link { display: inline-block; margin-top: 8px; color: #a8c4ad; font-size: 10px; text-decoration: none; }
+.n8n-open-link:hover { text-decoration: underline; }
+.automation-panel .local-badge { font-size: 9px; }
+.automation-fields { display: grid; grid-template-columns: minmax(160px, 1fr) minmax(200px, 1fr); gap: 12px; max-width: 580px; margin-top: 18px; }
+.automation-fields label { display: flex; flex-direction: column; gap: 6px; color: #9a9da4; font-size: 10px; }
+.automation-fields input { height: 34px; padding: 0 9px; border: 1px solid #33363b; border-radius: 5px; outline: none; background: #141517; color: #d9dadd; font-size: 11px; }
+.automation-fields input:focus { border-color: #657e6a; }
+.autosync-setting { display: flex; align-items: center; gap: 8px; margin-top: 13px; color: #b6b8bd; font-size: 10px; }
+.autosync-setting input { accent-color: #7da786; }
+.weekly-setting { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.weekly-setting > label:last-child { display: flex; align-items: center; gap: 7px; color: #92969d; font-size: 9px; }
+.weekly-setting input[type="time"] { height: 27px; padding: 0 6px; border: 1px solid #33363b; border-radius: 4px; background: #141517; color: #c8cacf; font-size: 10px; }
+.automation-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.automation-actions button, .notification-setting button { min-height: 29px; padding: 0 10px; border: 1px solid #3b4a3e; border-radius: 5px; background: #202a23; color: #c1d3c5; font-size: 10px; cursor: pointer; }
+.automation-actions button:hover, .notification-setting button:hover { background: #29382d; }
+.automation-actions button:disabled { cursor: wait; opacity: .6; }
+.automation-status { margin: 11px 0 0; font-size: 10px; }
+.automation-status.success { color: #94c39d; }.automation-status.error { color: #e49a91; }.automation-status.pending { color: #c9ae7c; }
+.automation-panel .github-footnote { max-width: 760px; line-height: 1.6; }
+.automation-panel code { color: #b7b9bf; }
+.workflow-map { margin-top: 22px; padding-top: 16px; border-top: 1px solid #2b2e32; }
+.workflow-steps { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+.workflow-node { display: flex; flex: 1; flex-direction: column; justify-content: center; gap: 5px; min-width: 0; min-height: 65px; padding: 10px; border: 1px solid #34373d; border-radius: 6px; background: #17191b; }
+.workflow-node strong { color: #d2d4d8; font-size: 10px; font-weight: 600; }
+.workflow-node span { overflow-wrap: anywhere; color: #838890; font-size: 9px; }
+.workflow-node.n8n-node { border-color: #6a5437; }.workflow-node.email-node { border-color: #45624b; }
+.workflow-arrow { color: #72777e; font-size: 16px; }
+.notification-setting { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 7px; color: #777c83; font-size: 9px; }
+.notification-setting button { min-height: 24px; padding-inline: 8px; font-size: 9px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.assistant-panel { margin-top: 20px; padding: 21px 23px; }
+.assistant-panel h2 { margin: 3px 0 0; color: #e0e1e3; font-size: 16px; font-weight: 550; }
+.assistant-top .status-dot.offline { background: #d38b80; box-shadow: 0 0 0 3px #382927; }
+.assistant-controls { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; margin-top: 17px; color: #92969d; font-size: 10px; }
+.assistant-controls select, .assistant-controls button { height: 29px; padding: 0 9px; border: 1px solid #35383d; border-radius: 5px; background: #17191b; color: #c9cbd0; font-size: 10px; }
+.assistant-controls button { cursor: pointer; }.assistant-controls button:disabled { cursor: wait; opacity: .6; }
+.assistant-model-status { color: #7c8088; }.assistant-model-status.success { color: #94c39d; }.assistant-model-status.error { color: #e49a91; }
+.assistant-chat { display: flex; flex-direction: column; gap: 11px; max-height: 380px; min-height: 112px; overflow-y: auto; margin-top: 14px; padding: 14px; border: 1px solid #2d3034; border-radius: 7px; background: #141517; }
+.assistant-empty { display: flex; flex-direction: column; justify-content: center; gap: 14px; min-height: 82px; }.assistant-empty > strong { color: #c9cbd0; font-size: 11px; font-weight: 550; }
+.assistant-prompts { display: flex; gap: 7px; flex-wrap: wrap; }.assistant-prompts button { padding: 6px 9px; border: 1px solid #34373c; border-radius: 5px; background: #1b1d20; color: #aeb1b8; font-size: 9px; cursor: pointer; }.assistant-prompts button:hover { border-color: #526654; color: #c7d8ca; }.assistant-prompts button:disabled { opacity: .5; cursor: not-allowed; }
+.assistant-message { max-width: min(780px, 92%); padding: 9px 11px; border: 1px solid #2d3034; border-radius: 6px; background: #1a1c1f; }.assistant-message.user { align-self: flex-end; border-color: #37483c; background: #1d2720; }.assistant-message > span { color: #91b599; font-size: 9px; font-weight: 600; }.assistant-message.user > span { color: #a6b5dc; }.assistant-message p { margin: 5px 0 0; color: #c8cacf; font-size: 11px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.assistant-thinking { margin: 0; color: #a9b894; font-size: 10px; }
+.assistant-form { display: flex; align-items: stretch; gap: 8px; margin-top: 10px; }.assistant-form textarea { min-height: 54px; max-height: 130px; }.assistant-form button { align-self: flex-end; min-width: 65px; height: 34px; border: 1px solid #4c6a53; border-radius: 5px; background: #2e4434; color: #c0dbc4; font-size: 10px; cursor: pointer; }.assistant-form button:disabled { cursor: not-allowed; opacity: .5; }.assistant-error { margin: 8px 0 0; color: #e49a91; font-size: 10px; }.assistant-privacy { margin-top: 12px; line-height: 1.6; }
+@media (max-width: 850px) {
+  .stats-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding-right: 90px; }
+  .stats-caption { position: absolute; top: 14px; right: 18px; }
+  .github-content { gap: 20px; }
+}
+@media (max-width: 560px) {
+  .github-panel { padding: 17px 14px; }
+  .github-top { flex-direction: column; gap: 8px; }
+  .sync-time { padding: 0; }
+  .github-content { grid-template-columns: 1fr; gap: 20px; }
+  .repo-item { grid-template-columns: minmax(0, 1fr) 70px 45px; }
+  .task-form { flex-wrap: wrap; }
+  .task-form input[aria-label="New task"] { flex-basis: calc(100% - 39px); }
+  .task-form input[type="date"] { flex: 1; width: 0; }
+  .task-form input[type="time"] { flex: 0 0 100px; }
+  .month-controls { gap: 3px; }
+  .text-button { padding-inline: 5px; }
+  .legend { gap: 10px; }
+  .leetcode-panel { padding: 17px 14px; }
+  .automation-panel { padding: 17px 14px; }
+  .automation-fields { grid-template-columns: 1fr; }
+  .workflow-steps { align-items: stretch; flex-direction: column; }
+  .assistant-panel { padding: 17px 14px; }
+  .assistant-top { flex-direction: column; gap: 8px; }
+  .assistant-form { align-items: flex-end; }
+  .workflow-node { flex: none; }
+  .workflow-arrow { align-self: center; transform: rotate(90deg); }
+  .leetcode-stats { align-items: flex-start; gap: 15px; }
+  .solved-total { padding-right: 13px; }
+  .solved-breakdown { flex-wrap: wrap; gap: 10px; }
+  .leetcode-extra { flex-wrap: wrap; padding-left: 13px; }
+}
